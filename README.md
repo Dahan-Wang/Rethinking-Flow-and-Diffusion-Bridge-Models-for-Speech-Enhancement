@@ -26,5 +26,9 @@ This anonymous repository contains code and audio samples for the paper "**Rethi
 
 - See `./audio_samples` for wav files.
 - Example spectrograms
-  <img src="assets/sample1_spec.png" width="75%" alt="Sample1.">
-  <img src="assets/sample2_spec.png" width="75%" alt="Sample1.">
+  - Sample 1
+
+    <img src="assets/sample1_spec.png" width="75%" alt="Sample1.">
+  - Sample 2
+  
+    <img src="assets/sample2_spec.png" width="75%" alt="Sample2.">
