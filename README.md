@@ -26,5 +26,5 @@ This anonymous repository contains code and audio samples for the paper "**Rethi
 
 - See `./audio_samples` for wav files.
 - Example spectrograms
-  <img src="https://raw.githubusercontent.com/Dahan-Wang/Rethinking-Flow-and-Diffusion-Bridge-Models-for-Speech-Enhancement/main/.figs/sample1_spec.png" width="800" alt="Sample 1.">
-  ![](.figs/sample2_spec.png)
+  <img src="assets/sample1_spec.png" width="75%" alt="Sample1.">
+  <img src="assets/sample2_spec.png" width="75%" alt="Sample1.">
