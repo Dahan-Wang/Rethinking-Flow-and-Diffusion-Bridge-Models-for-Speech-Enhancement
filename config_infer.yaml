@@ -1,0 +1,11 @@
+test_dir: #! Enter the test set dir
+
+version: #! E.g. "Bridge_..._20250802/version_0802"
+checkpoint: #! checkpoint name, without ".ckpt"
+exp_dir: #! Enter your experiment directory path
+log_dir: ${exp_dir}/${version}
+ckpt: ${log_dir}/checkpoints/${checkpoint}.ckpt
+enhanced_dir: ${log_dir}/enhanced/${checkpoint}_nfe=${N}_${sampler_type}
+
+N: 5
+sampler_type: ode
