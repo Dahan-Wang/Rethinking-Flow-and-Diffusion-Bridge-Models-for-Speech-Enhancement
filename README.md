@@ -1,6 +1,10 @@
 # Rethinking Flow and Diffusion Bridge Models for Speech Enhancement
 
-This anonymous repository contains code and audio samples for the paper "**Rethinking Flow and Diffusion Bridge Models for Speech Enhancement**" submited to AAAI 2026. The code builds upon https://github.com/sp-uhh/sgmse.
+This repository contains the appendix, code, and audio samples for the **AAAI 2026 oral** paper: **Rethinking Flow and Diffusion Bridge Models for Speech Enhancement**.
+
+- Appendix: derivations, additional discussion, and experiment setup details.
+- Code: an initial release of the implementation; a more polished version will be provided soon.
+- This project builds upon: https://github.com/sp-uhh/sgmse
 
 ## Usage
 - For training:
@@ -52,3 +56,5 @@ This anonymous repository contains code and audio samples for the paper "**Rethi
 | [🔊 Audio](audio_samples/Sample3_Noisy.wav)<br><img src="assets/Sample3_Noisy.png" alt="Sample3_Noisy" width="300"><br>*PESQ=1.068 DNSMOS=2.976* | [🔊 Audio](audio_samples/Sample3_Clean.wav)<br><img src="assets/Sample3_Clean.png" alt="Sample3_Clean" width="300"><br>*PESQ=4.500 DNSMOS=4.185* | [🔊 Audio](audio_samples/Sample3_Baseline_SGMSE+.wav)<br><img src="assets/Sample3_Baseline_SGMSE+.png" alt="Sample3_Baseline_SGMSE+" width="300"><br>*PESQ=1.111 DNSMOS=3.840* | [🔊 Audio](audio_samples/Sample3_Baseline_StoRM.wav)<br><img src="assets/Sample3_Baseline_StoRM.png" alt="Sample3_Baseline_StoRM" width="300"><br>*PESQ=1.764 DNSMOS=4.010* |
 | **Baseline SBVE** | **Baseline TF-GridNet** | **Proposed** | |
 | [🔊 Audio](audio_samples/Sample3_Baseline_SBVE.wav)<br><img src="assets/Sample3_Baseline_SBVE.png" alt="Sample3_Baseline_SBVE" width="300"><br>*PESQ=1.815 DNSMOS=3.834* | [🔊 Audio](audio_samples/Sample3_Baseline_TF-GridNet.wav)<br><img src="assets/Sample3_Baseline_TF-GridNet.png" alt="Sample3_Baseline_TF-GridNet" width="300"><br>*PESQ=2.821 DNSMOS=3.934* | [🔊 Audio](audio_samples/Sample3_Proposed.wav)<br><img src="assets/Sample3_Proposed.png" alt="Sample3_Proposed" width="300"><br>*PESQ=2.902 DNSMOS=4.076* | |
+
+## Citation
