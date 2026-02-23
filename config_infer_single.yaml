@@ -1,0 +1,24 @@
+noisy_file: /path/to/noisy_file
+output_file: /path/to/output_file
+
+version: trained_version
+checkpoint: checkpoint_name_without_extension
+exp_dir: ./logs
+log_dir: ${exp_dir}/${version}
+ckpt: ${log_dir}/checkpoints/${checkpoint}.ckpt
+
+N: 5
+sampler_type: ode_ei # ode_ei, sde_ei, ode_int, pc
+
+# sampler_kwargs:
+#   # for PC sampler
+#   predictor_name: euler_maruyama
+#   corrector_name: ald
+#   corrector_steps: 1
+#   snr: 0.5
+#   denoise: false
+#   # for ODE sampler
+#   rtol: 1e-5
+#   atol: 1e-5
+#   method: 'RK45'
+  

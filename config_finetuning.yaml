@@ -1,0 +1,36 @@
+# Global
+N: 5
+
+# Log
+version: Finetuning_Name_of_Pretraining_Model
+log_dir: ./logs
+save_ckpt_interval: 20000
+nolog: false
+
+# Train
+ckpt: /absolute/path/of/pre-training/checkpoint
+lr: 1e-4
+num_eval_files: 50
+loss_type: data_prediction_hybrid  # data_prediction_melphase
+l1_weight: 0.001
+pesq_weight: 0.0
+
+scheduler_config:
+  scheduler: exp  # fixed, warmup
+  config:
+    gamma: 0.99995
+
+# Data
+base_dir: /path/to/dataset
+format: default
+batch_size: 2
+n_fft: 512
+hop_length: 256
+num_frames: 256
+window: sqrthann
+num_workers: 6
+num_data_per_epoch: null
+dummy: false
+normalize: noisy
+transform_type: exponent
+

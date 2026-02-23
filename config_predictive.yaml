@@ -1,0 +1,39 @@
+# Global
+mode: predictive  # generative, predictive
+backbone: tfgridnet_5l32c100_predictive  # ncsnpp_v2_predictive, tfgridnet_5l32c100_predictive
+
+# Log
+version: PredictiveModel_Backbone=${backbone}_Dataset=${format}_Loss=${loss_type}
+log_dir: ./logs
+save_ckpt_interval: 20000
+nolog: false
+
+# Train
+ckpt: null  # resume from checkpoint, null for training from scratch
+lr: 1e-4
+num_eval_files: 50
+loss_type: data_prediction_hybrid  # data_prediction_melphase
+l1_weight: 0.001
+pesq_weight: 0.0
+
+scheduler_config:
+  scheduler: warmup  # fixed, warmup
+  config:
+    warmup_steps: 20000
+    decay_until_step: 200000
+    max_lr: 5e-4
+    min_lr: 5e-6
+
+# Data
+base_dir: /path/to/dataset
+format: default
+batch_size: 2  # batch size per gpu
+n_fft: 512
+hop_length: 256
+num_frames: 256
+window: sqrthann
+num_workers: 6
+num_data_per_epoch: null  # randomly use num_data_per_epoch training files per epoch
+dummy: false
+normalize: noisy
+transform_type: exponent  # spectral compression
